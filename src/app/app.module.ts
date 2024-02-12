@@ -10,6 +10,14 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CategoriesComponent } from './categories/categories.component';
 
+const firebaseConfig= {
+  apiKey: 'AIzaSyAQS0xnwce3sn6AdeXwDbxsMPvCPYv8xI4',
+  authDomain: 'ang-mobi-blog.firebaseapp.com',
+  projectId: 'ang-mobi-blog',
+  storageBucket: 'ang-mobi-blog.appspot.com',
+  messagingSenderId: '393036288298',
+  appId: '1:393036288298:web:bcc6f6edb912b491f6ce53',
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +29,7 @@ import { CategoriesComponent } from './categories/categories.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
   ],
   providers: [],
