@@ -1,1 +1,23 @@
-<p>categories works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 bg-secondary-theme p-5 shadow">
+      <h3 class="text-center text-theme-primary">New Category</h3>
+      <p class="text-center mb-5">You can add new Category from here...</p>
+
+      <form class="form-inline text-center" #categoryForm="ngForm">
+        <div class="col-md-10">
+          <input
+            type="text"
+            name="category"
+            class="form-control w-100"
+            placeholder="Add new Category"
+            ngModel
+          />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-block btn-info btn-theme">Add Category</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
